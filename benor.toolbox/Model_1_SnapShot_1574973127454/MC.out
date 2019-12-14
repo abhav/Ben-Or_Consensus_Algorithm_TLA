@@ -1,0 +1,1380 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.14 of 10 July 2019
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 114 and seed -6581832628846396454 with 2 workers on 4 cores with 608MB heap and 1365MB offheap memory [pid: 26920] (Mac OS X 10.15 x86_64, AdoptOpenJDK 11.0.3 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /Users/abhavluthra/Desktop/586/Subm/benor.toolbox/Model_1/MC.tla
+Parsing file /Users/abhavluthra/Desktop/586/Subm/benor.toolbox/Model_1/benor.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.201907102009/tla2sany/StandardModules/TLC.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.201907102009/tla2sany/StandardModules/Integers.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.201907102009/tla2sany/StandardModules/Sequences.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.201907102009/tla2sany/StandardModules/FiniteSets.tla
+Parsing file /Applications/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.201907102009/tla2sany/StandardModules/Naturals.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module benor
+Semantic processing of module TLC
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2019-11-28 15:30:44)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2212:0 @!@!@
+Implied-temporal checking--satisfiability problem has 1 branches.
+@!@!@ENDMSG 2212 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2019-11-28 15:30:45.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking temporal properties for the current state space with 4766 total distinct states at (2019-11-28 15:30:48)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 00s at 2019-11-28 15:30:48
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(19) at 2019-11-28 15:30:48: 11,471 states generated (11,471 s/min), 4,769 distinct states found (4,769 ds/min), 1,035 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking temporal properties for the current state space with 429390 total distinct states at (2019-11-28 15:31:48)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 12s at 2019-11-28 15:32:00
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(56) at 2019-11-28 15:32:00: 1,146,758 states generated (1,135,287 s/min), 429,866 distinct states found (425,097 ds/min), 8,754 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(58) at 2019-11-28 15:32:01: 1,172,657 states generated, 438,560 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking temporal properties for the complete state space with 438560 total distinct states at (2019-11-28 15:32:01)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2116:1 @!@!@
+Temporal properties were violated.
+
+@!@!@ENDMSG 2116 @!@!@
+@!@!@STARTMSG 2264:1 @!@!@
+The following behavior constitutes a counter-example:
+
+@!@!@ENDMSG 2264 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 1>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P", "P", "P">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, FALSE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <P line 142, col 12 to line 152, col 56 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 1>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P", "P">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, FALSE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <P line 142, col 12 to line 152, col 56 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 1>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P", "P1">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, FALSE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <P1 line 154, col 13 to line 158, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 1>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P", "CP1">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, FALSE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <CP1 line 160, col 14 to line 172, col 39 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 1>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P", "P2">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <P1 line 154, col 13 to line 158, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 1>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "P", "P2">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <P line 142, col 12 to line 152, col 56 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 1>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "P1", "P2">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <P2 line 174, col 13 to line 178, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 1>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "P1", "CP2">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <CP2 line 180, col 14 to line 189, col 80 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 1>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "P1", "P2F">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, TRUE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <P1 line 154, col 13 to line 158, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 1>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "CP1", "P2F">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, TRUE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <P2F line 191, col 14 to line 206, col 61 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "CP1", "P">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, TRUE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <CP1 line 160, col 14 to line 172, col 39 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "P2", "P">>
+/\ p2v = <<-1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, TRUE>>
+/\ phase1_complete = <<FALSE, TRUE, TRUE>>
+/\ decided = <<-1, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <P2 line 174, col 13 to line 178, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "CP2", "P">>
+/\ p2v = <<-1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<FALSE, FALSE, TRUE>>
+/\ phase1_complete = <<FALSE, TRUE, TRUE>>
+/\ decided = <<-1, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+14: <CP1 line 160, col 14 to line 172, col 39 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P2", "CP2", "P">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<FALSE, FALSE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<-1, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+15: <CP2 line 180, col 14 to line 189, col 80 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P2", "P2F", "P">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<FALSE, TRUE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<-1, 2, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+16: <P line 142, col 12 to line 152, col 56 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P2", "P2F", "P1">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<FALSE, TRUE, FALSE>>
+/\ phase1_complete = <<TRUE, TRUE, FALSE>>
+/\ decided = <<-1, 2, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+17: <P2 line 174, col 13 to line 178, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP2", "P2F", "P1">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<FALSE, TRUE, FALSE>>
+/\ phase1_complete = <<TRUE, TRUE, FALSE>>
+/\ decided = <<-1, 2, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+18: <CP2 line 180, col 14 to line 189, col 80 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 1, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P2F", "P2F", "P1">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<TRUE, TRUE, FALSE>>
+/\ phase1_complete = <<TRUE, TRUE, FALSE>>
+/\ decided = <<2, 2, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+19: <P2F line 191, col 14 to line 206, col 61 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<1, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P2F", "P", "P1">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<TRUE, TRUE, FALSE>>
+/\ phase1_complete = <<TRUE, TRUE, FALSE>>
+/\ decided = <<2, 2, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+20: <P2F line 191, col 14 to line 206, col 61 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<2, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P", "P", "P1">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<TRUE, TRUE, FALSE>>
+/\ phase1_complete = <<TRUE, TRUE, FALSE>>
+/\ decided = <<2, 2, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+21: <P line 142, col 12 to line 152, col 56 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<2, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P", "P1">>
+/\ p2v = <<-1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<FALSE, TRUE, FALSE>>
+/\ phase1_complete = <<FALSE, TRUE, FALSE>>
+/\ decided = <<-1, 2, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+22: <P1 line 154, col 13 to line 158, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<2, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "P", "P1">>
+/\ p2v = <<-1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<FALSE, TRUE, FALSE>>
+/\ phase1_complete = <<FALSE, TRUE, FALSE>>
+/\ decided = <<-1, 2, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+23: <P line 142, col 12 to line 152, col 56 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<2, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "P1", "P1">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, FALSE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+24: <P1 line 154, col 13 to line 158, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<2, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "P1", "CP1">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, FALSE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+25: <CP1 line 160, col 14 to line 172, col 39 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<2, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "P1", "P2">>
+/\ p2v = <<-1, -1, 1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+26: <P2 line 174, col 13 to line 178, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<2, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "P1", "CP2">>
+/\ p2v = <<-1, -1, 1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+27: <CP1 line 160, col 14 to line 172, col 39 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<2, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P2", "P1", "CP2">>
+/\ p2v = <<1, -1, 1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<TRUE, FALSE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+28: <P2 line 174, col 13 to line 178, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<2, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP2", "P1", "CP2">>
+/\ p2v = <<1, -1, 1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<TRUE, FALSE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+29: <CP2 line 180, col 14 to line 189, col 80 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<2, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P2F", "P1", "CP2">>
+/\ p2v = <<1, -1, 1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<TRUE, FALSE, FALSE>>
+/\ phase1_complete = <<TRUE, FALSE, TRUE>>
+/\ decided = <<2, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+30: <P2F line 191, col 14 to line 206, col 61 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P", "P1", "CP2">>
+/\ p2v = <<1, -1, 1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<TRUE, FALSE, FALSE>>
+/\ phase1_complete = <<TRUE, FALSE, TRUE>>
+/\ decided = <<2, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+31: <P line 142, col 12 to line 152, col 56 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P1", "CP2">>
+/\ p2v = <<-1, -1, 1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+32: <P1 line 154, col 13 to line 158, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "CP1", "CP2">>
+/\ p2v = <<-1, -1, 1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+33: <CP2 line 180, col 14 to line 189, col 80 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 2, 2>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "CP1", "P2F">>
+/\ p2v = <<-1, -1, 1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, TRUE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+34: <P2F line 191, col 14 to line 206, col 61 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 2, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "CP1", "P">>
+/\ p2v = <<-1, -1, 1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, TRUE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+35: <P line 142, col 12 to line 152, col 56 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 2, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "CP1", "P1">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, FALSE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+36: <CP1 line 160, col 14 to line 172, col 39 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 2, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P2", "P1">>
+/\ p2v = <<-1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, TRUE, FALSE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+37: <P1 line 154, col 13 to line 158, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 2, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P2", "CP1">>
+/\ p2v = <<-1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, TRUE, FALSE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+38: <P2 line 174, col 13 to line 178, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 2, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "CP2", "CP1">>
+/\ p2v = <<-1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, TRUE, FALSE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+39: <CP2 line 180, col 14 to line 189, col 80 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 2, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P2F", "CP1">>
+/\ p2v = <<-1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, TRUE, FALSE>>
+/\ phase1_complete = <<FALSE, TRUE, FALSE>>
+/\ decided = <<-1, 1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+40: <P2F line 191, col 14 to line 206, col 61 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P", "CP1">>
+/\ p2v = <<-1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, TRUE, FALSE>>
+/\ phase1_complete = <<FALSE, TRUE, FALSE>>
+/\ decided = <<-1, 1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+41: <P line 142, col 12 to line 152, col 56 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P1", "CP1">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, FALSE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+42: <CP1 line 160, col 14 to line 172, col 39 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P1", "P2">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+43: <P1 line 154, col 13 to line 158, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "CP1", "P2">>
+/\ p2v = <<-1, -1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, FALSE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+44: <CP1 line 160, col 14 to line 172, col 39 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P1", "P2", "P2">>
+/\ p2v = <<-1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, TRUE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+45: <P1 line 154, col 13 to line 158, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "P2", "P2">>
+/\ p2v = <<-1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, TRUE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+46: <P2 line 174, col 13 to line 178, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"CP1", "P2", "CP2">>
+/\ p2v = <<-1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<FALSE, TRUE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+47: <CP1 line 160, col 14 to line 172, col 39 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P2", "P2", "CP2">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, FALSE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<-1, -1, -1>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+48: <CP2 line 180, col 14 to line 189, col 80 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 3>>
+/\ p1v = <<1, 1, 1>>
+/\ pc = <<"P2", "P2", "P2F">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<-1, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+49: <P2F line 191, col 14 to line 206, col 61 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 4>>
+/\ p1v = <<1, 1, 0>>
+/\ pc = <<"P2", "P2", "P">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3]}
+/\ phase2_complete = <<FALSE, FALSE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<-1, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+50: <P2 line 174, col 13 to line 178, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 4>>
+/\ p1v = <<1, 1, 0>>
+/\ pc = <<"CP2", "P2", "P">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1]}
+/\ phase2_complete = <<FALSE, FALSE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<-1, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+51: <P line 142, col 12 to line 152, col 56 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 4>>
+/\ p1v = <<1, 1, 0>>
+/\ pc = <<"CP2", "P2", "Done">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1]}
+/\ phase2_complete = <<FALSE, FALSE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<-1, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+52: <CP2 line 180, col 14 to line 189, col 80 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 4>>
+/\ p1v = <<1, 1, 0>>
+/\ pc = <<"P2F", "P2", "Done">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1]}
+/\ phase2_complete = <<TRUE, FALSE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<2, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+53: <P2 line 174, col 13 to line 178, col 48 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 4>>
+/\ p1v = <<1, 1, 0>>
+/\ pc = <<"P2F", "CP2", "Done">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<TRUE, FALSE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<2, -1, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+54: <CP2 line 180, col 14 to line 189, col 80 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 3, 4>>
+/\ p1v = <<1, 1, 0>>
+/\ pc = <<"P2F", "P2F", "Done">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<TRUE, TRUE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<2, 2, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+55: <P2F line 191, col 14 to line 206, col 61 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 4, 4>>
+/\ p1v = <<1, 1, 0>>
+/\ pc = <<"P2F", "P", "Done">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<TRUE, TRUE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<2, 2, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+56: <P line 142, col 12 to line 152, col 56 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<3, 4, 4>>
+/\ p1v = <<1, 1, 0>>
+/\ pc = <<"P2F", "Done", "Done">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<TRUE, TRUE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<2, 2, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+57: <P2F line 191, col 14 to line 206, col 61 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<4, 4, 4>>
+/\ p1v = <<1, 1, 0>>
+/\ pc = <<"P", "Done", "Done">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<TRUE, TRUE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<2, 2, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+58: <P line 142, col 12 to line 152, col 56 of module benor>
+/\ n_id = <<1, 2, 3>>
+/\ r = <<4, 4, 4>>
+/\ p1v = <<1, 1, 0>>
+/\ pc = <<"Done", "Done", "Done">>
+/\ p2v = <<1, 1, -1>>
+/\ p2Msg = {[round |-> 1, val |-> -1, node_id |-> 3], [round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> -1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2]}
+/\ phase2_complete = <<TRUE, TRUE, TRUE>>
+/\ phase1_complete = <<TRUE, TRUE, TRUE>>
+/\ decided = <<2, 2, 2>>
+/\ p1Msg = {[round |-> 1, val |-> 1, node_id |-> 1], [round |-> 1, val |-> 1, node_id |-> 2], [round |-> 1, val |-> 1, node_id |-> 3], [round |-> 2, val |-> 1, node_id |-> 1], [round |-> 2, val |-> 1, node_id |-> 2], [round |-> 2, val |-> 1, node_id |-> 3], [round |-> 3, val |-> 1, node_id |-> 1], [round |-> 3, val |-> 1, node_id |-> 2], [round |-> 3, val |-> 1, node_id |-> 3]}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2218:4 @!@!@
+59: Stuttering
+@!@!@ENDMSG 2218 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 04s at 2019-11-28 15:32:06
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2019-11-28 15:32:06
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 129, col 1 to line 129, col 4 of module benor>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 130, col 9 to line 140, col 42 of module benor: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<P line 142, col 1 to line 142, col 7 of module benor>: 108436:301020
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 142, col 15 to line 142, col 28 of module benor: 1616814
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 142, col 15 to line 142, col 22 of module benor: 1315794
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 143, col 18 to line 143, col 36 of module benor: 301020
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 144, col 23 to line 148, col 57 of module benor: 119472
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 149, col 26 to line 149, col 59 of module benor: 181548
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 150, col 26 to line 151, col 48 of module benor: 181548
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 152, col 15 to line 152, col 56 of module benor: 301020
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<P1 line 154, col 1 to line 154, col 8 of module benor>: 42197:110299
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 154, col 16 to line 154, col 30 of module benor: 1426081
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 154, col 16 to line 154, col 23 of module benor: 1315782
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 155, col 16 to line 155, col 103 of module benor: 110299
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 156, col 16 to line 156, col 48 of module benor: 110299
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 157, col 16 to line 158, col 48 of module benor: 110299
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<CP1 line 160, col 1 to line 160, col 9 of module benor>: 50399:138331
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 160, col 17 to line 160, col 32 of module benor: 1454104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 160, col 17 to line 160, col 24 of module benor: 1315773
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 161, col 18 to line 161, col 63 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 161, col 18 to line 161, col 54 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 161, col 30 to line 161, col 53 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 119, col 23 to line 119, col 48 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 119, col 38 to line 119, col 46 of module benor: 1008388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 119, col 30 to line 119, col 34 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 161, col 46 to line 161, col 52 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 161, col 60 to line 161, col 62 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 162, col 20 to line 162, col 69 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 162, col 20 to line 162, col 65 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 162, col 20 to line 162, col 63 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 162, col 32 to line 162, col 62 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 116, col 30 to line 116, col 68 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 116, col 44 to line 116, col 67 of module benor: 1008388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 116, col 45 to line 116, col 53 of module benor: 1008388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 116, col 60 to line 116, col 66 of module benor: 333814
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 116, col 37 to line 116, col 41 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 162, col 53 to line 162, col 59 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 162, col 69 to line 162, col 69 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 163, col 25 to line 163, col 58 of module benor: 104727
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 164, col 31 to line 164, col 80 of module benor: 33604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 164, col 31 to line 164, col 76 of module benor: 33604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 164, col 31 to line 164, col 74 of module benor: 33604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 164, col 43 to line 164, col 73 of module benor: 33604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 116, col 30 to line 116, col 68 of module benor: 33604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 116, col 44 to line 116, col 67 of module benor: 227650
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 116, col 45 to line 116, col 53 of module benor: 227650
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 116, col 60 to line 116, col 66 of module benor: 54820
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 116, col 37 to line 116, col 41 of module benor: 33604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 164, col 64 to line 164, col 70 of module benor: 33604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 164, col 80 to line 164, col 80 of module benor: 33604
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 165, col 36 to line 165, col 69 of module benor: 4932
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 166, col 36 to line 166, col 70 of module benor: 28672
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 167, col 17 to line 167, col 74 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 168, col 20 to line 168, col 46 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 169, col 25 to line 169, col 59 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 170, col 28 to line 170, col 60 of module benor: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 171, col 17 to line 172, col 39 of module benor: 138331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<P2 line 174, col 1 to line 174, col 8 of module benor>: 69823:183108
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 174, col 16 to line 174, col 30 of module benor: 1498872
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 174, col 16 to line 174, col 23 of module benor: 1315764
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 175, col 16 to line 175, col 103 of module benor: 183108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 176, col 16 to line 176, col 48 of module benor: 183108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 177, col 16 to line 178, col 48 of module benor: 183108
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<CP2 line 180, col 1 to line 180, col 9 of module benor>: 74494:191767
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 180, col 17 to line 180, col 32 of module benor: 1507522
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 180, col 17 to line 180, col 24 of module benor: 1315755
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 181, col 18 to line 181, col 63 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 181, col 18 to line 181, col 54 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 181, col 30 to line 181, col 53 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 120, col 23 to line 120, col 48 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 120, col 38 to line 120, col 46 of module benor: 1331553
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 120, col 30 to line 120, col 34 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 181, col 46 to line 181, col 52 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 181, col 60 to line 181, col 62 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 182, col 20 to line 182, col 74 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 182, col 20 to line 182, col 63 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 182, col 32 to line 182, col 62 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 117, col 30 to line 117, col 68 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 117, col 44 to line 117, col 67 of module benor: 1331553
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 117, col 45 to line 117, col 53 of module benor: 1331553
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 117, col 60 to line 117, col 66 of module benor: 431484
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 117, col 37 to line 117, col 41 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 182, col 53 to line 182, col 59 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 182, col 69 to line 182, col 73 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 183, col 25 to line 183, col 66 of module benor: 882
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 184, col 31 to line 184, col 85 of module benor: 190885
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 184, col 31 to line 184, col 74 of module benor: 190885
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 184, col 43 to line 184, col 73 of module benor: 190885
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 117, col 30 to line 117, col 68 of module benor: 190885
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 117, col 44 to line 117, col 67 of module benor: 1323615
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 117, col 45 to line 117, col 53 of module benor: 1323615
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 117, col 60 to line 117, col 66 of module benor: 428838
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 117, col 37 to line 117, col 41 of module benor: 190885
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 184, col 64 to line 184, col 70 of module benor: 190885
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 184, col 80 to line 184, col 84 of module benor: 190885
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 185, col 36 to line 185, col 77 of module benor: 19138
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 186, col 36 to line 186, col 77 of module benor: 171747
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 187, col 17 to line 187, col 74 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 188, col 17 to line 188, col 49 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 189, col 17 to line 189, col 80 of module benor: 191767
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<P2F line 191, col 1 to line 191, col 9 of module benor>: 93210:246986
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 191, col 17 to line 191, col 32 of module benor: 1525470
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 191, col 17 to line 191, col 24 of module benor: 1315746
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 192, col 20 to line 192, col 45 of module benor: 209724
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 193, col 31 to line 193, col 53 of module benor: 209724
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 194, col 36 to line 194, col 81 of module benor: 20020
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 195, col 42 to line 195, col 141 of module benor: 189704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 195, col 42 to line 195, col 89 of module benor: 189704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 195, col 42 to line 195, col 85 of module benor: 189704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 195, col 54 to line 195, col 84 of module benor: 189704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 117, col 30 to line 117, col 68 of module benor: 189704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 117, col 44 to line 117, col 67 of module benor: 1313302
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 117, col 45 to line 117, col 53 of module benor: 1313302
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 117, col 60 to line 117, col 66 of module benor: 425296
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 117, col 37 to line 117, col 41 of module benor: 189704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 195, col 75 to line 195, col 81 of module benor: 189704
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 195, col 94 to line 195, col 141 of module benor: 182420
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 195, col 94 to line 195, col 137 of module benor: 182420
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 195, col 106 to line 195, col 136 of module benor: 182420
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 117, col 30 to line 117, col 68 of module benor: 182420
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 117, col 44 to line 117, col 67 of module benor: 1255666
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 117, col 45 to line 117, col 53 of module benor: 1255666
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 117, col 60 to line 117, col 66 of module benor: 408508
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 117, col 37 to line 117, col 41 of module benor: 182420
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 195, col 127 to line 195, col 133 of module benor: 182420
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 196, col 53 to line 196, col 100 of module benor: 152442
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 196, col 53 to line 196, col 96 of module benor: 152442
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 196, col 65 to line 196, col 95 of module benor: 152442
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 117, col 30 to line 117, col 68 of module benor: 152442
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 117, col 44 to line 117, col 67 of module benor: 1084220
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 117, col 45 to line 117, col 53 of module benor: 1084220
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 117, col 60 to line 117, col 66 of module benor: 375098
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 117, col 37 to line 117, col 41 of module benor: 152442
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 196, col 86 to line 196, col 92 of module benor: 152442
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 197, col 58 to line 197, col 91 of module benor: 7284
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 198, col 58 to line 198, col 91 of module benor: 145158
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 200, col 52 to line 200, col 82 of module benor: 74524
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 199, col 59 to line 199, col 63 of module benor: 37262:111786
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 202, col 28 to line 202, col 37 of module benor: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 203, col 17 to line 203, col 51 of module benor: 246986
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 204, col 17 to line 204, col 47 of module benor: 246986
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 205, col 17 to line 206, col 61 of module benor: 246986
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 212, col 1 to line 212, col 11 of module benor>: 0:1261
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 212, col 40 to line 212, col 56 of module benor: 511240
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 212, col 40 to line 212, col 47 of module benor: 507457
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 212, col 31 to line 212, col 37 of module benor: 438560
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 213, col 19 to line 213, col 32 of module benor: 1261
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Agreement line 225, col 1 to line 225, col 9 of module benor>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 225, col 14 to line 225, col 136 of module benor: 438560
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 225, col 34 to line 225, col 136 of module benor: 3947040
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 225, col 35 to line 225, col 108 of module benor: 3947040
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 225, col 35 to line 225, col 89 of module benor: 3947040
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 225, col 35 to line 225, col 70 of module benor: 3947040
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 225, col 35 to line 225, col 50 of module benor: 3947040
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 225, col 55 to line 225, col 70 of module benor: 2023245
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 225, col 75 to line 225, col 89 of module benor: 1377111
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 225, col 94 to line 225, col 108 of module benor: 127689
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 225, col 114 to line 225, col 136 of module benor: 81435
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 225, col 27 to line 225, col 31 of module benor: 438560
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(58) at 2019-11-28 15:32:06: 1,172,657 states generated (837,253 s/min), 438,560 distinct states found (313,122 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+1172657 states generated, 438560 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 84059ms at (2019-11-28 15:32:06)
+@!@!@ENDMSG 2186 @!@!@
